@@ -1,0 +1,28 @@
+<resources>
+  <string name="app_name">Shoe Store</string>
+  <string name="title_activity_splash">Shoe Store</string>
+  <string name="shoe_store_inventory">Shoe Store Inventory</string>
+  <string name="icon">Icon</string>
+  <string name="powered_by">Powered by</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="sign_in">Sign in</string>
+  <string name="enter_your_password">Enter your Password...</string>
+  <string name="enter_your_email_address">Enter your Email Address...</string>
+  <string name="udacity">Udacity</string>
+  <string name="welcome_to_shoe_store">Welcome to Shoe Store</string>
+  <string name="welcome_illustration">Welcome Illustration</string>
+  <string name="welcome_description">We are delighted to have you among us. On behalf of all the members and the management, we would like to extend our warmest welcome and good wishes!</string>
+  <string name="next">Next</string>
+  <string name="intruction_title">Instruction on this app</string>
+  <string name="instruction_description">After going to the next page you will see a bunch of shoe list, just explore shoe you want and click one of those, and you will go to the detail page.</string>
+  <string name="i_m_ready_to_start">I\'m ready to start</string>
+  <string name="edit">Edit</string>
+  <string name="cancel">Cancel</string>
+  <string name="submit">Submit</string>
+  <string name="enter_your_shoe_description">Enter your Shoe Description...</string>
+  <string name="enter_your_shoe_size">Enter your Shoe Size...</string>
+  <string name="enter_your_shoe_company">Enter your Shoe Company...</string>
+  <string name="enter_your_shoe_name">Enter your Shoe Name...</string>
+  <string name="logout">Logout</string>
+</resources>

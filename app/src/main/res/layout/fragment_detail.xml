@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+    <variable
+      name="mainViewModel"
+      type="com.beebee.shoestore.MainViewModel" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/medium_padding">
+
+    <EditText
+      android:id="@+id/shoe_name"
+      style="@style/Input"
+      android:layout_marginTop="@dimen/large_margin"
+      android:hint="@string/enter_your_shoe_name"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/shoe_company"
+      style="@style/Input"
+      android:hint="@string/enter_your_shoe_company"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/shoe_name" />
+
+    <EditText
+      android:id="@+id/shoe_size"
+      style="@style/Input"
+      android:hint="@string/enter_your_shoe_size"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/shoe_company" />
+
+    <EditText
+      android:id="@+id/shoe_description"
+      style="@style/Input"
+      android:hint="@string/enter_your_shoe_description"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/shoe_size" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/shoe_description">
+      <Button
+        android:id="@+id/cancel_button"
+        style="@style/ButtonSecondary"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="@string/cancel"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_weight="1" />
+
+      <Button
+        android:id="@+id/submit_button"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:text="@string/submit" />
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

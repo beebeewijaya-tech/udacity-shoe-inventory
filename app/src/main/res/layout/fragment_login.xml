@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/medium_padding">
+
+    <ImageView
+      android:id="@+id/icon_image"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/huge_margin"
+      android:contentDescription="@string/icon"
+      android:src="@drawable/ic_icon"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/app_name"
+      style="@style/title"
+      android:layout_marginTop="@dimen/small_margin"
+      android:text="@string/shoe_store_inventory"
+      android:textSize="@dimen/medium_font"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/icon_image" />
+
+    <EditText
+      android:id="@+id/password"
+      style="@style/Input"
+      android:hint="@string/enter_your_password"
+      android:importantForAutofill="no"
+      android:inputType="textPassword"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <EditText
+      android:id="@+id/email"
+      style="@style/Input"
+      android:layout_marginTop="@dimen/large_margin"
+      android:hint="@string/enter_your_email_address"
+      android:importantForAutofill="no"
+      android:inputType="textEmailAddress"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/app_name" />
+
+    <Button
+      android:id="@+id/sign_in_button"
+      style="@style/Button"
+      android:layout_marginTop="@dimen/small_margin"
+      android:text="@string/sign_in"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+      android:id="@+id/powered_by"
+      style="@style/title"
+      android:layout_marginTop="@dimen/extra_huge_margin"
+      android:fontFamily="@font/montserrat"
+      android:text="@string/powered_by"
+      android:textSize="@dimen/small_font"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/sign_in_button" />
+
+    <ImageView
+      android:id="@+id/udacity_lgo"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/tiny_margin"
+      android:contentDescription="@string/udacity"
+      android:src="@drawable/ic_udacity"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/powered_by" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
