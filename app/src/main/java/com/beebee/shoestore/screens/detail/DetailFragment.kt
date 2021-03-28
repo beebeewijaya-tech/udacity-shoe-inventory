@@ -28,8 +28,7 @@ class DetailFragment : Fragment() {
 		binding.lifecycleOwner = this
 
 		binding.cancelButton.setOnClickListener { findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToListFragment()) }
-		binding.submitButton.setOnClickListener { saveShoe() }
-
+		binding.mainViewModel = mainViewModel
 		mainViewModel.shoeAdded.observe(viewLifecycleOwner, Observer { shoeAdded ->
 			if (shoeAdded) {
 				findNavController().popBackStack()
@@ -37,24 +36,5 @@ class DetailFragment : Fragment() {
 			}
 		})
 		return binding.root
-	}
-
-	private fun saveShoe() {
-		val name = binding.shoeName.text.toString()
-		val company = binding.shoeCompany.text.toString()
-		val size = binding.shoeSize.text.toString()
-		val description = binding.shoeDescription.text.toString()
-
-		if (name.isEmpty() || company.isEmpty() || size.isEmpty() || description.isEmpty()) {
-			Toast.makeText(context, "Fill all form", Toast.LENGTH_LONG).show()
-		} else {
-			val shoe = Shoe(
-				name,
-				company,
-				size,
-				description
-			)
-			mainViewModel.saveShoe(shoe)
-		}
 	}
 }

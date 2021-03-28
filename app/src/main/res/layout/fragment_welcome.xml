@@ -1,40 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <androidx.constraintlayout.widget.ConstraintLayout
+  <!-- This screen using Linear because a bit simple because only vertical and horizontal -->
+
+  <LinearLayout
     android:id="@+id/welcome_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="@dimen/medium_padding">
+    android:paddingHorizontal="@dimen/medium_padding"
+    android:orientation="vertical">
 
     <ImageView
       android:id="@+id/welcome_illustration"
-      android:layout_width="0dp"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="@dimen/huge_margin"
       android:contentDescription="@string/welcome_illustration"
-      android:src="@drawable/ic_welcome"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      android:src="@drawable/ic_welcome" />
 
     <TextView
       android:id="@+id/welcome_text"
       style="@style/title"
+      android:layout_width="match_parent"
       android:layout_marginTop="@dimen/small_margin"
       android:text="@string/welcome_to_shoe_store"
-      android:textSize="@dimen/medium_font"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/welcome_illustration" />
+      android:textSize="@dimen/medium_font" />
 
     <TextView
       android:id="@+id/welcome_description"
       style="@style/title"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/welcome_text"
+      android:layout_width="match_parent"
       android:fontFamily="@font/montserrat"
       android:layout_marginTop="@dimen/tiny_margin"
       android:text="@string/welcome_description"/>
@@ -42,10 +37,8 @@
     <Button
       android:id="@+id/button_next"
       style="@style/Button"
+      android:layout_width="match_parent"
       android:layout_marginTop="@dimen/small_margin"
-      android:text="@string/next"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/welcome_description" />
-  </androidx.constraintlayout.widget.ConstraintLayout>
+      android:text="@string/next" />
+  </LinearLayout>
 </layout>

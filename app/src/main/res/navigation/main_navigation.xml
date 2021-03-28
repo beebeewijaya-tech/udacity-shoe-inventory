@@ -79,7 +79,7 @@
       app:enterAnim="@anim/fade_out"
       app:exitAnim="@anim/fade_in"
       app:launchSingleTop="true"
-      app:popUpTo="@id/splashFragment"
+      app:popUpTo="@id/listFragment"
       app:popUpToInclusive="true" />
   </fragment>
   <fragment

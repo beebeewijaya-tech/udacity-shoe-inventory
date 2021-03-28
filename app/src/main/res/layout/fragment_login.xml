@@ -2,6 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto">
 
+  <!-- This screen using Constraint because a bit complicated because so many input there and so many image, most likely we need some viewgroup if using linearlayout -->
+
   <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/login_layout"
     android:layout_width="match_parent"

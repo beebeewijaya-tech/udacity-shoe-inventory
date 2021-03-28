@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto">
-   <androidx.coordinatorlayout.widget.CoordinatorLayout
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- This screen using Coordinator layout because want to use Fabs -->
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      android:orientation="vertical">
+      <!-- This screen using ScrollView layout we want make it scrollable -->
      <ScrollView
        android:id="@+id/list_layout"
        android:layout_width="match_parent"
        android:layout_height="match_parent">
+       <!-- This screen using Linear layout because it's simple list, only vertical 1 column -->
        <LinearLayout
          android:id="@+id/shoe_layout"
          android:layout_width="match_parent"
